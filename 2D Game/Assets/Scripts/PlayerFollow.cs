@@ -17,9 +17,9 @@ public class PlayerFollow : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (playerTransform.position.x > -4f && playerTransform.position.x < 5f)
+        if (playerTransform.position.x > -4f && playerTransform.position.x < 5f) //if within boundries of the background
         {
-            cameraTransform.position = new Vector3(playerTransform.position.x + 4.48f, cameraY, cameraZ);
+            cameraTransform.position = new Vector3(playerTransform.position.x + 4.48f, cameraY, cameraZ); //follow the player's position
         }
         
     }
